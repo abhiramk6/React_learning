@@ -1,21 +1,19 @@
 
 import './App.css';
+import Navbar from './components/navbar';
+import TextForm from './components/textForm';
 
 function App() {
   return (
-      <>
-          <nav>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact us</li>
-          </nav>
-          <div className="container">
-              <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-          </div>
-      </>
+<>    
+    <Navbar title = "Textutils" />
+  
+    <div className="container my-3">
+    <TextForm heading = " enter text here"/>
+    </div>
+</>
   );
 };
 
 export default App;
+  
