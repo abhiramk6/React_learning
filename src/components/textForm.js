@@ -23,14 +23,14 @@ export default function TextForm(props) {
     }
 
 
-    const [text,setText]= useState('Enter Text Here');
+    const [text,setText]= useState('');
   return (
     <div>
         <h1>{props.heading}</h1>
         <div className="mb-3">
         <textarea className="form-control" value={text} onChange={handelOnChange} id="myBox" rows="8"></textarea>
-        <button className="btn btn-primary my-4 mx-4" onClick={handelUpClick}>convert to upercase</button>
-        <button className="btn btn-primary" onClick={handelDoClick}>convert to lowercase</button>
+        <button className="btn btn-primary mx-2 my-4" onClick={handelUpClick}>convert to upercase</button>
+        <button className="btn btn-primary mx-2 my-4" onClick={handelDoClick}>convert to lowercase</button>
         </div>
 
         <div className="container">
