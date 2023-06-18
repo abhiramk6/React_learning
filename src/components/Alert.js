@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Alert() {
   return (
-    <div class="container">Alert</div>
+    <div class="container">
+      Alert
+    </div>
   )
 }
